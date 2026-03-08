@@ -1,0 +1,59 @@
+
+╔══════════════════════════════════════════════════════════╗
+║          PHASE 4 — PREDICTIVE MODEL RESULTS              ║
+╚══════════════════════════════════════════════════════════╝
+
+Dataset: 69560 total patients (train: 55648 | test: 13912)
+Target: readmitted_binary (1 = readmitted within 30 days)
+Class balance: 63410 not readmitted | 6150 readmitted
+
+Features used (10):
+  age_numeric, time_in_hospital, num_medications, num_lab_procedures, number_diagnoses, number_inpatient, number_emergency, insulin_enc, diabetesMed_enc, change_enc
+
+──────────────────────────────────────────────────────────
+MODEL 1: LOGISTIC REGRESSION
+──────────────────────────────────────────────────────────
+Accuracy : 0.6121 (61.21%)
+ROC-AUC  : 0.6022
+
+                precision    recall  f1-score   support
+
+Not Readmitted       0.93      0.62      0.74     12682
+    Readmitted       0.12      0.53      0.19      1230
+
+      accuracy                           0.61     13912
+     macro avg       0.53      0.58      0.47     13912
+  weighted avg       0.86      0.61      0.70     13912
+
+
+──────────────────────────────────────────────────────────
+MODEL 2: RANDOM FOREST (100 trees)
+──────────────────────────────────────────────────────────
+Accuracy : 0.9066 (90.66%)
+ROC-AUC  : 0.5544
+
+                precision    recall  f1-score   support
+
+Not Readmitted       0.91      0.99      0.95     12682
+    Readmitted       0.03      0.00      0.00      1230
+
+      accuracy                           0.91     13912
+     macro avg       0.47      0.50      0.48     13912
+  weighted avg       0.83      0.91      0.87     13912
+
+
+──────────────────────────────────────────────────────────
+FEATURE IMPORTANCE (Random Forest — Top 5):
+──────────────────────────────────────────────────────────
+Lab Procedures      0.319056
+Num Medications     0.235922
+Time in Hospital    0.120080
+Age                 0.093975
+Num Diagnoses       0.088590
+
+──────────────────────────────────────────────────────────
+SUMMARY:
+  Best Model     : Logistic Regression
+  Best ROC-AUC   : 0.6022
+  Recommendation : Use ROC-AUC as primary metric due to class imbalance
+──────────────────────────────────────────────────────────
