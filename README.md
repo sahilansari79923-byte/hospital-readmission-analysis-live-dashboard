@@ -150,4 +150,4 @@ A1Cresult and max_glu_serum got dropped because over 40% of values were missing.
 
 ## Dashboard Preview
 
-[![Dashboard Preview]()
+[![Dashboard Preview](https://github.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/blob/main/snaps/Dashboard_snap.png)
