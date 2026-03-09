@@ -67,40 +67,35 @@ python src/model.py        # trains models, saves results/model_results.txt
 3. Import `diabetic_cleaned.csv` — right-click the schema → *Table Data Import Wizard*
 4. Open `sql/queries.sql` in Workbench and run the queries directly
 
-**SQL Query Results:**
-
-**1. Overall Readmission Rate**
-![Overall Readmission Rate](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/overall%20readmission%20rate.png)
-
-**2. Readmission Rate by Age Group**
-![Readmission Rate by Age Group](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20rate%20by%20age%20group.png)
-
-**3. Readmission Rate by Race**
-![Readmission Rate by Race](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20rate%20by%20race.png)
-
-**4. Readmission Rate by Gender**
-![Readmission Rate by Gender](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20rate%20by%20gender.png)
-
-**5. Average Hospital Stay — Readmitted vs Not**
-![Average Hospital Stay](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/average%20hospital%20stay-%20readmission%20or%20not.png)
-
-**6. Impact of Insulin Dosage Change on Readmission**
-![Impact of Insulin](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/impact%20of%20insulin%20doasage%20change%20on%20readmission.png)
-
-**7. Impact of Diabetes Medication on Readmission**
-![Impact of Diabetes Medication](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/impact%20of%20diabetes%20medication%20(onoff)%20on%20readmission.png)
-
-**8. Readmission by Number of Diagnoses**
-![Readmission by Diagnoses](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20by%20number%20of%20diagnostics.png)
-
-**9. Readmission by Medication Count Group**
-![Readmission by Medication Count](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20by%20medication%20count%20group.png)
-
-**10. Readmission by Lab Procedures**
-![Readmission by Lab Procedures](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20by%20lab%20procedure.png)
-
-
 Each script prints what it's doing as it runs.
+
+---
+
+
+## SQL Query Results
+
+<table>
+  <tr>
+    <td align="center"><b>1. Overall Readmission Rate</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/overall%20readmission%20rate.png" width="400"/></td>
+    <td align="center"><b>2. Readmission Rate by Age Group</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20rate%20by%20age%20group.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>3. Readmission Rate by Race</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20rate%20by%20race.png" width="400"/></td>
+    <td align="center"><b>4. Readmission Rate by Gender</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20rate%20by%20gender.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>5. Average Hospital Stay — Readmitted vs Not</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/average%20hospital%20stay-%20readmission%20or%20not.png" width="400"/></td>
+    <td align="center"><b>6. Impact of Insulin Dosage Change on Readmission</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/impact%20of%20insulin%20doasage%20change%20on%20readmission.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>7. Impact of Diabetes Medication on Readmission</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/impact%20of%20diabetes%20medication%20(onoff)%20on%20readmission.png" width="400"/></td>
+    <td align="center"><b>8. Readmission by Number of Diagnoses</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20by%20number%20of%20diagnostics.png" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>9. Readmission by Medication Count Group</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20by%20medication%20count%20group.png" width="400"/></td>
+    <td align="center"><b>10. Readmission by Lab Procedures</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20by%20lab%20procedure.png" width="400"/></td>
+  </tr>
+</table>
 
 ---
 
@@ -155,4 +150,4 @@ A1Cresult and max_glu_serum got dropped because over 40% of values were missing.
 
 ## Dashboard Preview
 
-[![Dashboard Preview](https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/Screenshot%20(1023).png)](https://sahilansari79923-byte.github.io/webpage/)
+[![Dashboard Preview]()
