@@ -1,8 +1,10 @@
 # Hospital Patient Readmission Analysis
 
 > 🔗 **[Live Dashboard](https://sahilansari79923-byte.github.io/webpage/)**
-
+> 
+![](https://github.com/sahilansari79923-byte/hospital-readmission-analysis-live-dashboard/blob/main/snaps/Dashboard_snap.png)
 ## Problem Statement 
+
 A diabetic patient gets discharged. Within 30 days, they're back. Why? That's what this project digs into. The dataset covers 130 US hospitals from 1999–2008 — around 100,000 records, 50 columns.
 
 Pipeline goes: raw data → cleaning (Python + Excel) → SQL queries → Power BI dashboard → charts.
