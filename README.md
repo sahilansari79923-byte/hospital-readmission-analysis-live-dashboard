@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-This project analyzes the factors contributing to the 30-day hospital readmission rate for diabetic patients. Utilizing a dataset of over 100,000 records from 130 US hospitals (1999–2008), the analysis processes raw clinical data through a complete pipeline from Python and Excel cleaning to SQL exploratory analysis and Power BI visualization to uncover trends related to demographics, treatments, and readmission risks.
+This project analyzes the factors contributing to the 30-day hospital readmission rate for diabetic patients. Utilizing a dataset of over 100,000 records from 130 US hospitals (1999–2008), the analysis processes raw clinical data through a complete pipeline—from Python and Excel cleaning to SQL exploratory analysis and Power BI visualization—to uncover trends related to demographics, treatments, and readmission risks.
 
 ## Key Insights
 
@@ -19,7 +19,7 @@ This project analyzes the factors contributing to the 30-day hospital readmissio
 
 ## Tools Used
 
-- **Data Cleaning:** Python (Pandas, NumPy, Matplotlib, Seaborn), Microsoft Excel (Power Query, Pivot Tables)
+- **Data Cleaning & EDA:** Python (Pandas, NumPy, Matplotlib, Seaborn), Microsoft Excel (Power Query, Pivot Tables)
 - **Database & Analysis:** MySQL Workbench
 - **Visualization:** Power BI Desktop
 - **Web Deployment:** HTML, CSS, JavaScript (Live Dashboard)
@@ -37,41 +37,41 @@ To replicate the project, download the CSV (~23MB) and place it in the `data/raw
 
 ## Project Structure
 
-- **`data/`**
-  - `raw/` — Place `diabetic_data.csv` here.
-  - `processed/` — Contains the output `diabetic_cleaned.csv`.
-- **`src/`**
-  - `cleaning.py` & `diabetic_cleaning.xlsx` — Phase 1: Data cleaning (Python / Excel).
-  - `eda.py` — Phase 3: Exploratory charts.
-- **`sql/`**
-  - `queries.sql` — All 10 analysis queries.
-- **`dashboard/`**
-  - `readmission_dashboard.pbix` — The Power BI dashboard file.
-- **`charts/`** — Saved EDA output charts.
-- **`report/`**
-  - `final_report.docx` — Final business-style write-up.
-- **`webpage/`** — Source files for the live dashboard.
+- **`assets/`** — Dashboard screenshots and saved EDA output charts.
+- **`data/`** — Contains the raw (`diabetic_data.csv`) and processed (`diabetic_cleaned.csv`) datasets.
+- **`docs/`** — Final business-style write-up and project documentation.
+- **`public/`** — Source HTML/CSS/JS files for the live web dashboard.
+- **`sql/`** — Contains all 10 analysis queries.
+- **`src/`** — Data cleaning (`cleaning.py`, `.xlsx`) and exploratory data analysis scripts (`eda.py`).
 
 ## How to Run
 
 **1. Excel Cleaning:**
-1. Open `excel/diabetic_cleaning.xlsx`.
+1. Open `src/diabetic_cleaning.xlsx`.
 2. The workbook documents each cleaning step with formulas and Power Query.
-3. The final sheet exports to `diabetic_cleaned.csv`.
+3. The final sheet exports to `diabetic_cleaned.csv` inside the `data/processed/` folder.
 
-**2. SQL Analysis:**
+**2. Exploratory Data Analysis (Python):**
+1. Ensure you have the required libraries installed: `pip install pandas numpy matplotlib seaborn`
+2. Run the EDA script from the project root: `python src/eda.py`
+3. The script will generate 6 analytical visualizations and save them directly to the `assets/` folder. *(Note: Ensure `CHART_DIR` in `eda.py` is set to `'assets/'`)*
+
+**3. SQL Analysis:**
 1. Open MySQL Workbench and connect to your local server.
 2. Create a new schema (e.g., `hospital_db`).
 3. Import `diabetic_cleaned.csv` via right-click on schema → *Table Data Import Wizard*.
 4. Open `sql/queries.sql` and execute the queries.
 
-**3. Power BI:**
-1. Open `dashboard/readmission_dashboard.pbix` in Power BI Desktop.
+**4. Power BI:**
+1. Open `dashboard/readmission_dashboard.pbix` in Power BI Desktop (or whichever folder contains your `.pbix` file).
 2. Update the data source settings to point to your local `diabetic_cleaned.csv` file.
 3. Refresh the dashboard.
 
 ## SQL Query Results
 
+<details>
+<summary><b>Click to view all 10 SQL Query Result Images</b></summary>
+<br>
 
 <table>
   <tr>
@@ -95,3 +95,5 @@ To replicate the project, download the CSV (~23MB) and place it in the `data/raw
     <td align="center"><b>10. Readmission by Lab Procedures</b><br><img src="https://raw.githubusercontent.com/sahilansari79923-byte/hospital-readmission-analysis-Predictive-Model/main/snaps/readmission%20by%20lab%20procedure.png" width="400"/></td>
   </tr>
 </table>
+
+</details>
