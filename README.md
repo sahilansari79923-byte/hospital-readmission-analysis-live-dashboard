@@ -8,7 +8,7 @@
 
 ## Project Overview
 
-This project analyzes the factors contributing to the 30-day hospital readmission rate for diabetic patients. Utilizing a dataset of over 100,000 records from 130 US hospitals (1999–2008), the analysis processes raw clinical data through a complete pipeline—from Python and Excel cleaning to SQL exploratory analysis and Power BI visualization to uncover trends related to demographics, treatments, and readmission risks.
+This project analyzes the factors contributing to the 30-day hospital readmission rate for diabetic patients. Utilizing a dataset of over 100,000 records from 130 US hospitals (1999–2008), the analysis processes raw clinical data through a complete pipeline from Python and Excel cleaning to SQL exploratory analysis and Power BI visualization to uncover trends related to demographics, treatments, and readmission risks.
 
 ## Key Insights
 
